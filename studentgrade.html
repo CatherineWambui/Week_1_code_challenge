@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Grades Calculator</title>
+	<!--Here we link our css file to the html file-->
+	<link rel="stylesheet" type="text/css" href="studentgrade.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Student Grades Calculator</h1>
+		<p>Please enter the marks for each subject:</p>
+		<!--Here initialize our form for the various subjects-->
+		<form>
+			<label for="python">Python:</label>
+			<input type="number" id="python" min="0" max="100" required>
+			<br>
+			<label for="math">Mathematics:</label>
+			<input type="number" id="math" min="0" max="100" required>
+			<br>
+			<label for="art">Art:</label>
+			<input type="number" id="art" min="0" max="100" required>
+			<br>
+			<button type="button" onclick="calculate()">Calculate</button>
+		</form>
+		<div id="result"></div>
+	</div>
+<!--Here we link our javascript file to the html file-->
+	<script src="studentgrade.js"></script>
+</body>
+</html>
